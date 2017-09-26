@@ -13,8 +13,8 @@ public class DummyTests {
     assert(false);
   }
 
-  @Test public void test2() {
-    run();
+  @Test public void test2()throws  Exception {
+    assert (true);
   }
 
   @Test public void test3() {
