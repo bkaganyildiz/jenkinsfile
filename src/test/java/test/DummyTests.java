@@ -1,7 +1,6 @@
 package test;
 
 import org.junit.Test;
-import sun.jvm.hotspot.utilities.AssertionFailure;
 
 public class DummyTests {
   protected void run() {
