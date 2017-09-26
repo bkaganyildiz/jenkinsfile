@@ -1,6 +1,7 @@
 package test;
 
 import org.junit.Test;
+import sun.jvm.hotspot.utilities.AssertionFailure;
 
 public class DummyTests {
   protected void run() {
@@ -8,7 +9,7 @@ public class DummyTests {
   }
 
   @Test public void test1() {
-    run();
+    throw new AssertionFailure();
   }
 
   @Test public void test2() {
