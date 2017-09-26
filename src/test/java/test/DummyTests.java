@@ -8,8 +8,9 @@ public class DummyTests {
     System.out.print("Hello");
   }
 
-  @Test public void test1() {
-    throw new AssertionFailure();
+  @Test
+  public void test1() throws Exception{
+    assert(false);
   }
 
   @Test public void test2() {
