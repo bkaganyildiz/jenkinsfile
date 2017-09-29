@@ -32,7 +32,7 @@ node {
    archive 'target/*.jar'
 }
 node {
-  step([$class: 'OpsGenieNotifier', artifact: 'target/*.jar']) // OK
+  step([$class: 'OpsGenieNotifier']) // OK
 }
 
 node {
