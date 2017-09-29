@@ -31,7 +31,9 @@ node {
    stage 'archive'
    archive 'target/*.jar'
 }
-
+node {
+  step([$class: 'OpsGenieNotifier', artifact: 'target/*.jar']) // OK
+}
 
 node {
    stage 'deploy Canary'
