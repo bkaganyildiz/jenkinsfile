@@ -4,6 +4,7 @@
 // NOTE: sleep commands are solelely inserted for the purpose of simulating long running tasks when you run the pipeline
 node {
    // Mark the code checkout 'stage'....
+   gatlingArchive()
    stage 'checkout'
 
    // Get some code from a GitHub repository
